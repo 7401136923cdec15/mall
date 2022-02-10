@@ -4,12 +4,14 @@
       <div slot="center">购物街</div>
     </nav-bar>
 
-    <my-swiper :swiperList="swiperList"></my-swiper>
-    <recommend-view :recommends="recommends"></recommend-view>
-    <feature-view></feature-view>
-    <tab-control class="tab-control" :titles="['流行','新款','精选']" @tabClick="tabClick"></tab-control>
+    <scroll class="content">
+      <my-swiper :swiperList="swiperList"></my-swiper>
+      <recommend-view :recommends="recommends"></recommend-view>
+      <feature-view></feature-view>
+      <tab-control class="tab-control" :titles="['流行','新款','精选']" @tabClick="tabClick"></tab-control>
+      <goods-list :goods="showGoods"/>
+    </scroll>
 
-    <goods-list :goods="showGoods"/>
   </div>
 </template>
 
@@ -25,6 +27,8 @@ import GoodsList from "components/content/goods/GoodsList";
 import {getHomeMultidata} from "network/home";
 import {getHomeGoods} from "network/home";
 
+import Scroll from "components/common/scroll/Scroll";
+
 export default {
   name: "Home",
   components: {
@@ -33,7 +37,8 @@ export default {
     NavBar,
     MySwiper,
     TabControl,
-    GoodsList
+    GoodsList,
+    Scroll
   },
   data() {
     return {
@@ -499,6 +504,8 @@ export default {
 <style scoped>
 #home {
   padding-top: 44px;
+  height: 100vh;
+  position: relative;
 }
 
 .home-nav {
@@ -517,5 +524,21 @@ export default {
   top: 44px;
 
   z-index: 9;
+}
+
+/*.content {*/
+/*  height: 100%;*/
+/*  overflow: hidden;*/
+/*}*/
+
+.content {
+  /*height: 300px;*/
+  position: absolute;
+  top: 44px;
+  bottom: 49px;
+  left: 0;
+  right: 0;
+
+  overflow: hidden;
 }
 </style>
