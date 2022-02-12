@@ -52,5 +52,6 @@ export default {
 .swiper-list img {
   display: block;
   width: 100%;
+  height: calc(100%);
 }
 </style>

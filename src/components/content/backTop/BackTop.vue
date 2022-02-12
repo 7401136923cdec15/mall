@@ -15,6 +15,8 @@ export default {
   position: fixed;
   right: 10px;
   bottom: 55px;
+  /*background-color: white;*/
+  /*border-radius: 16.5px;*/
 }
 
 .back-top img {

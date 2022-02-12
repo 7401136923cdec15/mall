@@ -1,0 +1,130 @@
+<template>
+<div>
+  <ul>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+    <li>详情内容</li>
+  </ul>
+</div>
+</template>
+
+<script>
+export default {
+  name: "DetailShopInfo"
+}
+</script>
+
+<style scoped>
+
+</style>

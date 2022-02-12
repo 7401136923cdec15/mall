@@ -6,11 +6,13 @@ import vant from "vant";
 import "vant/lib/index.css";
 
 // 全局引入懒加载
-import { Lazyload } from "vant";
+import {Lazyload} from "vant";
 
 Vue.config.productionTip = false
 
 Vue.use(vant);
+
+Vue.prototype.$bus = new Vue();
 
 // 使用懒加载
 Vue.use(Lazyload, {
