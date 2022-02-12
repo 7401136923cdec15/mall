@@ -4,7 +4,8 @@
       <div slot="center">购物街</div>
     </nav-bar>
 
-    <scroll class="content">
+    <scroll class="content" ref="scroll" :probe-type="3" @scroll="contentScroll" :pull-up-load="true"
+            @pullingup="loadMore">
       <my-swiper :swiperList="swiperList"></my-swiper>
       <recommend-view :recommends="recommends"></recommend-view>
       <feature-view></feature-view>
@@ -12,6 +13,7 @@
       <goods-list :goods="showGoods"/>
     </scroll>
 
+    <back-top @click.native="backClick" v-show="isShowBackTop"/>
   </div>
 </template>
 
@@ -23,6 +25,8 @@ import NavBar from "components/common/navbar/NavBar";
 import MySwiper from "components/common/swiper/MySwiper";
 import TabControl from "components/content/tabControl/TabControl";
 import GoodsList from "components/content/goods/GoodsList";
+
+import BackTop from "components/content/backTop/BackTop";
 
 import {getHomeMultidata} from "network/home";
 import {getHomeGoods} from "network/home";
@@ -38,7 +42,8 @@ export default {
     MySwiper,
     TabControl,
     GoodsList,
-    Scroll
+    Scroll,
+    BackTop
   },
   data() {
     return {
@@ -451,7 +456,8 @@ export default {
             }]
         }
       },
-      currentType: 'pop'
+      currentType: 'pop',
+      isShowBackTop: false
     }
   },
   computed: {
@@ -488,6 +494,18 @@ export default {
       }
     },
 
+    backClick() {
+      this.$refs.scroll.scrollTo(0, 0);
+    },
+
+    contentScroll(position) {
+      this.isShowBackTop = -position.y > 1000;
+    },
+
+    loadMore() {
+      // this.getMyHomeGoods(this.currentType);
+    },
+
     /**
      * 网络请求相关方法
      */
@@ -496,6 +514,8 @@ export default {
       const res = getHomeGoods(type, page);
       this.goods[type].list.push(...res);
       this.goods[type].page += 1;
+
+      this.$refs.scroll.finishPullUp();
     }
   }
 }
